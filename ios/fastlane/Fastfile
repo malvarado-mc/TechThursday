@@ -20,7 +20,8 @@ platform :ios do
   lane :build do
     build_app(
       export_method: 'development',
-      archive_path: 'build/archive'
+      archive_path: 'build/archive',
+      xcargs: "CC=clang CPLUSPLUS=clang++ LD=clang LDPLUSPLUS=clang++"
     )
     install_on_device(
       ipa: lane_context[SharedValues::IPA_OUTPUT_PATH]
