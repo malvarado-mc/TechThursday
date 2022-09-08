@@ -146,5 +146,5 @@ jobs:
       uses: actions/upload-artifact@v2.3.1
       with:
         name: iOS Release
-        path: ios/patentBuddyNative.ipa
+        path: ios/TechThursday.ipa
         retention-days: 0
