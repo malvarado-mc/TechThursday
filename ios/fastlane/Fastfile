@@ -23,8 +23,8 @@ platform :ios do
       archive_path: 'build/archive',
       xcargs: "CC=clang CPLUSPLUS=clang++ LD=clang LDPLUSPLUS=clang++"
     )
-    install_on_device(
-      ipa: lane_context[SharedValues::IPA_OUTPUT_PATH]
-    )
+#    install_on_device(
+#      ipa: lane_context[SharedValues::IPA_OUTPUT_PATH]
+#    )
   end
 end
