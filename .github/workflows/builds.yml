@@ -56,7 +56,7 @@ jobs:
       
     # ----------------------------------------- SETUP STORE CREDENTIALS -----------------------------------------
     - name: Add service account file
-      run: echo ${{ secrets.ANDROID_BASE64_SERVICE_ACCOUNT_JSON }} | base64 --decode > ./android/service-account.json
+      run: echo ${{ secrets.ANDROID_BASE64_SERVICE_ACCOUNT_JSON }} | base64 --decode > ./android/account.json
 
     # ------------------------------------------ BUILD AND DISTRIBUTE -------------------------------------------
     
